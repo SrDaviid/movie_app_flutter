@@ -1,21 +1,6 @@
 import 'dart:convert';
 
 class Movie {
-  bool adult;
-  String? backdropPath;
-  List<int> genreIds;
-  int id;
-  String originalLanguage;
-  String originalTitle;
-  String overview;
-  double popularity;
-  String? posterPath;
-  String? releaseDate;
-  String title;
-  bool video;
-  double voteAverage;
-  int voteCount;
-
   Movie({
     required this.adult,
     this.backdropPath,
@@ -32,6 +17,21 @@ class Movie {
     required this.voteAverage,
     required this.voteCount,
   });
+
+  bool adult;
+  String? backdropPath;
+  List<int> genreIds;
+  int id;
+  String originalLanguage;
+  String originalTitle;
+  String overview;
+  double popularity;
+  String? posterPath;
+  String? releaseDate;
+  String title;
+  bool video;
+  double voteAverage;
+  int voteCount;
 
   factory Movie.fromJson(String str) => Movie.fromMap(json.decode(str));
 
