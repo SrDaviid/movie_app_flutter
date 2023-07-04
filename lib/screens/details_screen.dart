@@ -7,9 +7,7 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //TODO: Cambiar logo por una instancia de movie
     final Movie movie = ModalRoute.of(context)!.settings.arguments as Movie;
-    print(movie.title);
 
     return Scaffold(
       body: CustomScrollView(
